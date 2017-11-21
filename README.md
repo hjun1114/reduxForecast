@@ -1,6 +1,6 @@
 # routerForecast
 
-Simple React Redux Forecast application using react form and router. 
+Simple React Redux Forecast application. 
 
 -> 
 
