@@ -8,10 +8,12 @@ export function fetchWeather(city){
   const theURL = `${ROOT_URL}&q=${city},us`;
   console.log(theURL);
   const request = axios.get(theURL);
-
+  // this request variable only contains a promise. it is NOT an actual data.
+  // thus, it needs to be unwrapped by a middleware, redux-promise.
+  
   return {
     type: FETCH_WEATHER,
     payload: request
   };
-  
+
 }
