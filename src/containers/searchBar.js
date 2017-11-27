@@ -42,8 +42,10 @@ class SearchBar extends React.Component {
     );
   }
 }
+
 function mapDispatchToProps(dispatch){
   return bindActionCreators({fetchWeather}, dispatch);
 }
+
 export default connect(null, mapDispatchToProps)(SearchBar);
 //mapDispatchToProps ALWAYS has to be second parameter. thats why we need null as a first eventhough we don't need it at the moment.
