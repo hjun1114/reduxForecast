@@ -5,7 +5,7 @@ export const FETCH_WEATHER = 'FETCH_WEATHER'; // Extracting type variable like t
 
 export function fetchWeather(city){
 
-  const theURL = `${ROOT_URL}&q=${city},us`;
+  const theURL = `${ROOT_URL}&q=${city},canada`;
   const request = axios.get(theURL);
   // this request variable at this point only contains a promise. it is NOT an actual data.
   // thus, it needs to be unwrapped by a middleware, redux-promise.

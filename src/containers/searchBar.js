@@ -28,7 +28,7 @@ class SearchBar extends React.Component {
     return (
       <form onSubmit={this.onFormSubmit} className ="input-group">
         <input
-          placeholder="search for your favorite cities"
+          placeholder="ex) Montreal or other Canadian cities!"
           className="form-control"
           value={this.state.term} // controlled component.
           onChange={this.onInputChange}
